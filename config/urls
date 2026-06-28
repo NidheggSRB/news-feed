@@ -3,53 +3,55 @@
 "query:World News:tags # \"news\" and age < 1 and unread = \"yes\""
 "query:Podcasts:tags # \"podcast\" and unread = \"yes\""
 "query:Youtube:tags # \"youtube\""
-"query:Science:tags # \"sci\""
+"query:Science&History:tags # \"scihi\""
 "query:Russian:tags # \"ru\""
 "query:Comedy:tags # \"comedy\""
 "query:Security:tags # \"security\""
+"query:AI:tags # \"ai\""
 
+# Security
 https://feeds.feedburner.com/TheHackersNews "~The Hacker News" security
-https://www.hashicorp.com/blog/products/vault/feed.xml "~HashiCorp Vault" hashicorp infra
+https://hackernoon.com/feed "~HackerNoon" security
+https://www.hashicorp.com/blog/products/vault/feed.xml "~HashiCorp Vault" hashicorp security
 
+# Tech News
 https://rss.slashdot.org/Slashdot/slashdotMain "~tech - Slashdot" tech slashdot
-
-https://www.reddit.com/r/linux/top/.rss?sort=top&t=day&limit=6 "~Reddit - Linux" tech reddit
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA "~Dev - Fireship" dev ai
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIat2Cdg661wF5DQDWTQAmg "~Dev - Probabl" dev ml
 https://highscalability.com/feed "~Dev - High Scalability" tech
-
 https://techcrunch.com/feed/ tech
 https://feeds.arstechnica.com/arstechnica/technology-lab tech
-https://hackernoon.com/feed "~Tech - HackerNoon" security
 https://www.phoronix.com/rss.php tech
 https://spectrum.ieee.org/customfeeds/feed/all-topics/rss tech
+https://www.reddit.com/r/linux/top/.rss?sort=top&t=day&limit=6 "~Reddit - Linux" tech reddit
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA "~TED-ed" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg "~Tech - Real Engineering" youtube tech
 
+# AI
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA "~Dev - Fireship" dev ai
+https://www.youtube.com/feeds/videos.xml?channel_id=UCIat2Cdg661wF5DQDWTQAmg "~Dev - Probabl" dev ai
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ "~Dev - Andrej Karpathy (AI/LLMs)" dev ml ai
+
+# News
+
+https://www.reddit.com/r/worldnews/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - World News" news reddit
+https://www.reddit.com/r/europe/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - Europe" news reddit
 https://www.youtube.com/feeds/videos.xml?channel_id=UCknLrEdhRCp1aegoMqRaCZg "~News - DW" news
 https://www.youtube.com/feeds/videos.xml?channel_id=UC52X5wxOL_s5yw0dQk7NtgA "~News - AP" news
 https://www.youtube.com/feeds/videos.xml?channel_id=UCK7tptUDHh-RYDsdxO1-5QQ "~News - Wall Street Journal" news
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIALMKvObZNtJ6AmdCLP7Lg "~News - Bloomberg " news
-https://www.reddit.com/r/worldnews/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - World News" news reddit
-https://www.reddit.com/r/europe/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - Europe" news reddit
 
-https://cloud.mave.digital/36719 "~Podcast - Gleb Solomin" podcast
-https://feeds.transistor.fm/37107aa2-7710-4afa-a427-77bec3de7594 "~Podcast - Dawn of the Empire" podcast
-https://feeds.simplecast.com/4T39_jAj "~Podcast - Startalk" podcast
+# Science&History
 
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2q4mHrzoR48mwSuAYtVPtQ "~Sci - Scinquisitor (Panchin)" sci ru
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Sci - Kurzgesagt" sci
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHnyfMqiRRG1u-2MsSQLbXA "~Sci - Veritasium" sci
+https://cloud.mave.digital/36719 "~Podcast - Gleb Solomin" podcast scihi ru
+https://feeds.simplecast.com/4T39_jAj "~Podcast - Startalk" podcast scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2q4mHrzoR48mwSuAYtVPtQ "~Sci - Scinquisitor (Panchin)" scihi ru
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Sci - Kurzgesagt" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHnyfMqiRRG1u-2MsSQLbXA "~Sci - Veritasium" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmeHX75iiqezgdKgYfrFKSA "~Sci - Antropogenez.ru" scihi ru
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSPd93is2UQsd_jZ6yHBfqQ "~Sci - PostNauka" scihi ru
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-9b7aDP6ZN0coj9-xFnrtw "~Sci - Astrum" youtube scihi
+https://feeds.transistor.fm/37107aa2-7710-4afa-a427-77bec3de7594 "~Podcast - Dawn of the Empire" podcast scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA "~History - Weird History" youtube scihi
+
+# Comedy
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRSWQSkgVqNtPMK4WEToOiA "~Comedy - Komissarenko" comedy ru
-https://www.youtube.com/feeds/videos.xml?channel_id=UCmeHX75iiqezgdKgYfrFKSA "~Sci - Antropogenez.ru" sci ru
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSPd93is2UQsd_jZ6yHBfqQ "~Sci - PostNauka" sci ru
-https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ "~Dev - Andrej Karpathy (AI/LLMs)" dev ml ai
-
-# Astrum
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-9b7aDP6ZN0coj9-xFnrtw "~Sci - Astrum" sci
-# Real Engineering
-https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg youtube
-# DW Documentary
-https://www.youtube.com/feeds/videos.xml?channel_id=UCW39zufHfsuGgpLviKh297Q youtube
-# Weird History
-https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA youtube
-# TED-Ed
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA youtube
