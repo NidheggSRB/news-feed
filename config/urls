@@ -1,12 +1,12 @@
-"query:Security:tags # \"security\""
-"query:AI:tags # \"ai\""
+"query:Security:tags # \"security\" and unread = \"yes\""
+"query:AI:tags # \"ai\" and unread = \"yes\""
 "query:Tech News:tags # \"tech\" and age < 2 and unread = \"yes\""
 "query:World News:tags # \"news\" and age < 1 and unread = \"yes\""
 "query:Podcasts:tags # \"podcast\" and unread = \"yes\""
-"query:Youtube:tags # \"youtube\""
-"query:Science&History:tags # \"scihi\""
-"query:Russian:tags # \"ru\""
-"query:Comedy:tags # \"comedy\""
+"query:Youtube:tags # \"youtube\" and unread = \"yes\""
+"query:Science&History:tags # \"scihi\" and unread = \"yes\""
+"query:Russian:tags # \"ru\" and unread = \"yes\""
+"query:Comedy:tags # \"comedy\" and unread = \"yes\""
 
 # Security
 https://feeds.feedburner.com/TheHackersNews "~The Hacker News" security

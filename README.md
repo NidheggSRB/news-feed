@@ -11,6 +11,24 @@ Personal RSS/Atom aggregator built on <a href="https://github.com/exaroth/livebo
 
 This repository is based on the <a href="https://github.com/exaroth/liveboat">liveboat-github-runner</a> template — original setup instructions are preserved below.
 
+## Feed categories
+
+Feeds are grouped into query feeds (aggregated views) by tag. Current categories defined at the top of `config/urls`:
+
+| Query feed | Tag | Notes |
+|---|---|---|
+| Security | `security` | unfiltered |
+| AI | `ai` | unfiltered |
+| Tech News | `tech` | unread, age < 2 days |
+| World News | `news` | unread, age < 1 day |
+| Podcasts | `podcast` | unread |
+| Youtube | `youtube` | unfiltered |
+| Science&History | `scihi` | unfiltered |
+| Russian | `ru` | unfiltered |
+| Comedy | `comedy` | unfiltered |
+
+A feed can carry multiple tags and appear in several query feeds.
+
 ## Installation
 
 Prerequisites: 
@@ -159,6 +177,17 @@ By default feed page will be rebuilt every hour, if you want to change it edit `
 ## Template updates
 
 In order to manually update templates supplied with Liveboat execute `make update`, alternatively you can enable automatic updates by setting `ENABLE_AUTOMATIC_UPDATES` to `1` in `./config/page_options` file which will check for new version during every page rebuild.
+
+## Liveboat binary pinning
+
+For supply-chain safety the Liveboat binary is pinned to a specific release (`v1.1.8`) and verified against a known-good SHA256 hash hardcoded in both `.github/workflows/workflow.yml` and `Makefile`.
+
+> [!WARNING]
+> The upstream `liveboat-linux-musl.sha256sum` file does **not** match the served binary, so it cannot be used for verification. The hash is pinned directly instead.
+
+To upgrade Liveboat:
+1. Download the new `liveboat-linux-musl` binary and compute its hash: `sha256sum liveboat-linux-musl`
+2. Update the release tag and the `EXPECTED` hash constant in both `workflow.yml` and `Makefile`.
 
 ## License
 Liveboat is provided under MIT License, see `LICENSE` file for details
