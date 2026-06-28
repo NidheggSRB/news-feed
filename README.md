@@ -15,19 +15,19 @@ This repository is based on the <a href="https://github.com/exaroth/liveboat">li
 
 Feeds are grouped into query feeds (aggregated views) by tag. Current categories defined at the top of `config/urls`:
 
-| Query feed | Tag | Notes |
+| Query feed | Tag | Filter |
 |---|---|---|
-| Security | `security` | unfiltered |
-| AI | `ai` | unfiltered |
+| Security | `security` | unread |
+| AI | `ai` | unread |
 | Tech News | `tech` | unread, age < 2 days |
 | World News | `news` | unread, age < 1 day |
 | Podcasts | `podcast` | unread |
-| Youtube | `youtube` | unfiltered |
-| Science&History | `scihi` | unfiltered |
-| Russian | `ru` | unfiltered |
-| Comedy | `comedy` | unfiltered |
+| Youtube | `youtube` | unread |
+| Science&History | `scihi` | unread |
+| Russian | `ru` | unread |
+| Comedy | `comedy` | unread |
 
-A feed can carry multiple tags and appear in several query feeds.
+All query feeds show only unread items. A feed can carry multiple tags and appear in several query feeds.
 
 ## Installation
 
