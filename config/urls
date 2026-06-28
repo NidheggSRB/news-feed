@@ -2,7 +2,11 @@
 "query:Tech News:tags # \"tech\" and age < 2 and unread = \"yes\""
 "query:World News:tags # \"news\" and age < 1 and unread = \"yes\""
 "query:Podcasts:tags # \"podcast\" and unread = \"yes\""
-"query:Youtube:tags # \"yt\""
+"query:Youtube:tags # \"youtube\""
+"query:Science:tags # \"sci\""
+"query:Russian:tags # \"ru\""
+"query:Comedy:tags # \"comedy\""
+"query:Security:tags # \"security\""
 
 https://feeds.feedburner.com/TheHackersNews "~The Hacker News" security
 https://www.hashicorp.com/blog/products/vault/feed.xml "~HashiCorp Vault" hashicorp infra
@@ -42,10 +46,10 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ "~D
 # Astrum
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-9b7aDP6ZN0coj9-xFnrtw "~Sci - Astrum" sci
 # Real Engineering
-https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg yt
+https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg youtube
 # DW Documentary
-https://www.youtube.com/feeds/videos.xml?channel_id=UCW39zufHfsuGgpLviKh297Q yt
+https://www.youtube.com/feeds/videos.xml?channel_id=UCW39zufHfsuGgpLviKh297Q youtube
 # Weird History
-https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA yt
+https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA youtube
 # TED-Ed
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA yt
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA youtube
