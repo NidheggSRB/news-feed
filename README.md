@@ -1,13 +1,15 @@
 <h2 align="center">
 <img align="center" width="70" height="70" src="./assets/logo.png"><br/>
 <br/>
-Liveboat Github Runner
+Personal News Feed — NidheggSRB
 </h2>
 
-### See it in [Action](https://konrad.website/liveboat-github-runner)
+### Live at [NidheggSRB.github.io/news-feed](https://nidheggSRB.github.io/news-feed)
 
 <br/>
-This is template repository for <a href="https://github.com/exaroth/liveboat">Liveboat</a> feed generator, use it to configure and deploy feed websites on Github Pages. Follow instructions below for more details.
+Personal RSS/Atom aggregator built on <a href="https://github.com/exaroth/liveboat">Liveboat</a> and hosted on GitHub Pages. GitHub Actions fetches configured feeds via Newsboat every hour, generates a static site, and deploys it automatically. Feed sources are defined in <code>config/urls</code>.
+
+This repository is based on the <a href="https://github.com/exaroth/liveboat">liveboat-github-runner</a> template — original setup instructions are preserved below.
 
 ## Installation
 
@@ -122,6 +124,30 @@ See Newsboat documentation for list of all available filtering options.
 ## Newsboat cache persistence
 
 By default Newsboat cache file containing feed data is not being persisted in between feed rebuilds - this means that only articles retrieved during current Newsboat reload will be processed. To change that set `PERSIST_NEWSBOAT_CACHE` to `1` within `./config/page_options` file, this will cause Newsboat db cache to be saved after every update. Additionally set `NEWSBOAT_CACHE_RETENTION_DAYS` to number of days articles will be stored in db (ideally this should match `keep-articles-days` in `./config/newsboat-config` file).
+
+## Updating the URL list
+
+Edit `config/urls` to add, remove, or retag feeds. See the [URL file syntax](#liveboat-url-file-breakdown) section for format details.
+
+> [!IMPORTANT]
+> CI rebuilds and pushes to `master` every hour. Always pull before pushing to avoid merge conflicts.
+
+```sh
+git pull --rebase
+git add config/urls
+git commit -m "Update feeds"
+git push
+```
+
+To trigger an immediate rebuild after pushing, tag the commit:
+
+```sh
+git tag build<N> && git push --tags
+```
+
+Replace `<N>` with the next sequential number (check `git tag` for the last one used).
+
+If you get a push rejection after committing, run `git pull --rebase` again before pushing — CI may have pushed another rebuild in the meantime.
 
 ## Changing build time intervals
 By default feed page will be rebuilt every hour, if you want to change it edit `.github/workflows/workflow.yml` and update schedule definition

@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
 
       - name: Checkout
@@ -30,7 +29,10 @@ jobs:
       - name: Fetch liveboat
         run: |
           mkdir -p ./bin
-          sh -c 'wget -O ./bin/liveboat https://github.com/exaroth/liveboat/releases/download/stable/liveboat-linux-musl && chmod +x ./bin/liveboat'
+          wget -O ./bin/liveboat https://github.com/exaroth/liveboat/releases/download/v1.1.8/liveboat-linux-musl
+          wget -O ./bin/liveboat.sha256sum https://github.com/exaroth/liveboat/releases/download/v1.1.8/liveboat-linux-musl.sha256sum
+          (cd ./bin && sha256sum -c liveboat.sha256sum)
+          chmod +x ./bin/liveboat
 
       - name: Source options
         uses: falti/dotenv-action@v1.1.4
@@ -85,7 +87,7 @@ jobs:
           git gc --prune=now
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c  # master @ 2026-05-24
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force_with_lease: true
