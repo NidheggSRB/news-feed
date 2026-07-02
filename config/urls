@@ -17,6 +17,8 @@ https://www.bleepingcomputer.com/feed/ security
 https://www.darkreading.com/rss.xml security
 https://isc.sans.edu/rssfeed.xml security
 https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml "~CISA Advisories" security
+https://www.schneier.com/feed/ "~Schneier on Security" security
+https://cloudblog.withgoogle.com/rss/ "~Google Cloud Blog" security tech
 
 # Tech News
 https://highscalability.com/feed "~Tech - High Scalability" tech
@@ -25,6 +27,7 @@ https://feeds.arstechnica.com/arstechnica/technology-lab tech
 https://www.phoronix.com/rss.php tech
 https://spectrum.ieee.org/customfeeds/feed/all-topics/rss tech
 https://www.reddit.com/r/linux/top/.rss?sort=top&t=day&limit=6 "~Reddit - Linux" tech reddit
+https://news.ycombinator.com/rss "~Hacker News" tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA "~TED-ed" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg "~Tech - Real Engineering" youtube tech
 
@@ -35,14 +38,13 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA "~A
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIat2Cdg661wF5DQDWTQAmg "~AI - Probabl" tech ai
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ "~AI - Andrej Karpathy (AI/LLMs)" ai
 https://borischerny.com/feed.xml "~AI - Boris Cherny (Anthropic)" ai
+https://openai.com/news/rss.xml "~AI - OpenAI" ai
 
 # News
 
 https://www.theguardian.com/world/rss "~News - The Guardian" news
 https://www.reddit.com/r/worldnews/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - World News" news reddit
 https://www.reddit.com/r/europe/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - Europe" news reddit
-https://www.youtube.com/feeds/videos.xml?channel_id=UCK7tptUDHh-RYDsdxO1-5QQ "~News - Wall Street Journal" news
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIALMKvObZNtJ6AmdCLP7Lg "~News - Bloomberg " news
 
 # Science&History
 
