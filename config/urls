@@ -2,23 +2,18 @@
 "query:AI:tags # \"ai\" and unread = \"yes\""
 "query:Tech News:tags # \"tech\" and age < 2 and unread = \"yes\""
 "query:World News:tags # \"news\" and age < 1 and unread = \"yes\""
-"query:Podcasts:tags # \"podcast\" and unread = \"yes\""
-"query:Youtube:tags # \"youtube\" and unread = \"yes\""
 "query:Science&History:tags # \"scihi\" and unread = \"yes\""
-"query:Russian:tags # \"ru\" and unread = \"yes\""
 "query:Comedy:tags # \"comedy\" and unread = \"yes\""
 
 # Security
-https://feeds.feedburner.com/TheHackersNews "~The Hacker News" security
-https://hackernoon.com/feed "~HackerNoon" security
-https://www.hashicorp.com/blog/products/vault/feed.xml "~HashiCorp Vault" hashicorp security
+https://hackernoon.com/feed "~HackerNoon" tech
+https://www.hashicorp.com/blog/products/vault/feed.xml "~HashiCorp Vault" security
 https://krebsonsecurity.com/feed/ "~Krebs on Security " security
 https://www.bleepingcomputer.com/feed/ security
-https://www.darkreading.com/rss.xml security
 https://isc.sans.edu/rssfeed.xml security
 https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml "~CISA Advisories" security
 https://www.schneier.com/feed/ "~Schneier on Security" security
-https://cloudblog.withgoogle.com/rss/ "~Google Cloud Blog" security tech
+https://cloudblog.withgoogle.com/rss/ "~Google Cloud Blog" tech
 
 # Tech News
 https://highscalability.com/feed "~Tech - High Scalability" tech
@@ -26,39 +21,39 @@ https://techcrunch.com/feed/ tech
 https://feeds.arstechnica.com/arstechnica/technology-lab tech
 https://www.phoronix.com/rss.php tech
 https://spectrum.ieee.org/customfeeds/feed/all-topics/rss tech
-https://www.reddit.com/r/linux/top/.rss?sort=top&t=day&limit=6 "~Reddit - Linux" tech reddit
+https://www.reddit.com/r/linux/top/.rss?sort=top&t=day&limit=6 "~Reddit - Linux" tech
 https://news.ycombinator.com/rss "~Hacker News" tech
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA "~TED-ed" youtube tech
-https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg "~Tech - Real Engineering" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA "~TED-ed" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCR1IuLEqb6UEA_zQ81kwXfg "~Tech - Real Engineering" tech
 
 # AI
-https://simonwillison.net/atom/everything/ "~AI - Simon Willison" ai security
-https://genai.owasp.org/feed/ "~AI - OWASP GenAI Security" ai security
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA "~AI - Fireship" tech ai
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIat2Cdg661wF5DQDWTQAmg "~AI - Probabl" tech ai
+https://simonwillison.net/atom/everything/ "~AI - Simon Willison" ai
+https://genai.owasp.org/feed/ "~AI - OWASP GenAI Security" security
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA "~AI - Fireship" tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ "~AI - Andrej Karpathy (AI/LLMs)" ai
 https://borischerny.com/feed.xml "~AI - Boris Cherny (Anthropic)" ai
 https://openai.com/news/rss.xml "~AI - OpenAI" ai
+https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml "~AI - Anthropic" ai
+https://deepmind.google/blog/rss.xml "~AI - Google DeepMind" ai
 
 # News
 
 https://www.theguardian.com/world/rss "~News - The Guardian" news
-https://www.reddit.com/r/worldnews/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - World News" news reddit
-https://www.reddit.com/r/europe/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - Europe" news reddit
+https://www.reddit.com/r/europe/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - Europe" news
 
 # Science&History
 
-https://cloud.mave.digital/36719 "~Podcast - Gleb Solomin" podcast scihi ru
-https://feeds.simplecast.com/4T39_jAj "~Podcast - Startalk" podcast scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2q4mHrzoR48mwSuAYtVPtQ "~Sci - Scinquisitor (Panchin)" scihi ru
+https://cloud.mave.digital/36719 "~Podcast - Gleb Solomin" scihi
+https://feeds.simplecast.com/4T39_jAj "~Podcast - Startalk" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2q4mHrzoR48mwSuAYtVPtQ "~Sci - Scinquisitor (Panchin)" scihi
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Sci - Kurzgesagt" scihi
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHnyfMqiRRG1u-2MsSQLbXA "~Sci - Veritasium" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCmeHX75iiqezgdKgYfrFKSA "~Sci - Antropogenez.ru" scihi ru
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSPd93is2UQsd_jZ6yHBfqQ "~Sci - PostNauka" scihi ru
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-9b7aDP6ZN0coj9-xFnrtw "~Sci - Astrum" youtube scihi
-https://feeds.transistor.fm/37107aa2-7710-4afa-a427-77bec3de7594 "~Podcast - Dawn of the Empire" podcast scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA "~History - Weird History" youtube scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmeHX75iiqezgdKgYfrFKSA "~Sci - Antropogenez.ru" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSPd93is2UQsd_jZ6yHBfqQ "~Sci - PostNauka" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-9b7aDP6ZN0coj9-xFnrtw "~Sci - Astrum" scihi
+https://feeds.transistor.fm/37107aa2-7710-4afa-a427-77bec3de7594 "~Podcast - Dawn of the Empire" scihi
+https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA "~History - Weird History" scihi
 https://www.nature.com/nataging.rss "~Sci - Nature Aging" scihi
 
 # Comedy
-https://www.youtube.com/feeds/videos.xml?channel_id=UCRSWQSkgVqNtPMK4WEToOiA "~Comedy - Komissarenko" comedy ru
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRSWQSkgVqNtPMK4WEToOiA "~Comedy - Komissarenko" comedy
