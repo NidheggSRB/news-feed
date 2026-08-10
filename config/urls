@@ -14,6 +14,14 @@ https://isc.sans.edu/rssfeed.xml security
 https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml "~CISA Advisories" security
 https://www.schneier.com/feed/ "~Schneier on Security" security
 https://cloudblog.withgoogle.com/rss/ "~Google Cloud Blog" tech
+https://www.blackhillsinfosec.com/?feed=rss2 "~Black Hills InfoSec" security
+https://malwaretech.com/feed "~MalwareTech (Marcus Hutchins)" security
+https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/ "~Google Threat Intelligence (Mandiant)" security
+https://portswigger.net/research/rss "~PortSwigger Research" security
+https://grugq.substack.com/feed "~The Info Op (grugq)" security
+https://feeds.twit.tv/sn.xml "~Security Now (podcast)" security
+https://blog.orange.tw/atom.xml "~Orange Tsai" security
+https://www.bunniestudios.com/blog/feed/ "~bunnie huang" security
 
 # Tech News
 https://highscalability.com/feed "~Tech - High Scalability" tech
