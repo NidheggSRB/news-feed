@@ -3,7 +3,6 @@
 "query:Tech News:tags # \"tech\" and age < 2 and unread = \"yes\""
 "query:World News:tags # \"news\" and age < 1 and unread = \"yes\""
 "query:Science&History:tags # \"scihi\" and unread = \"yes\""
-"query:Comedy:tags # \"comedy\" and unread = \"yes\""
 
 # Security
 https://hackernoon.com/feed "~HackerNoon" tech
@@ -44,24 +43,11 @@ https://openai.com/news/rss.xml "~AI - OpenAI" ai
 https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml "~AI - Anthropic" ai
 https://deepmind.google/blog/rss.xml "~AI - Google DeepMind" ai
 
-# News
-
-https://www.theguardian.com/world/rss "~News - The Guardian" news
-https://www.reddit.com/r/europe/top/.rss?sort=top&t=day&limit=10 "~News - Reddit - Europe" news
-
 # Science&History
 
 https://cloud.mave.digital/36719 "~Podcast - Gleb Solomin" scihi
 https://feeds.simplecast.com/4T39_jAj "~Podcast - Startalk" scihi
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2q4mHrzoR48mwSuAYtVPtQ "~Sci - Scinquisitor (Panchin)" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Sci - Kurzgesagt" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHnyfMqiRRG1u-2MsSQLbXA "~Sci - Veritasium" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCmeHX75iiqezgdKgYfrFKSA "~Sci - Antropogenez.ru" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSPd93is2UQsd_jZ6yHBfqQ "~Sci - PostNauka" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-9b7aDP6ZN0coj9-xFnrtw "~Sci - Astrum" scihi
 https://feeds.transistor.fm/37107aa2-7710-4afa-a427-77bec3de7594 "~Podcast - Dawn of the Empire" scihi
-https://www.youtube.com/feeds/videos.xml?channel_id=UCc-N24Y5OA0gqbjBwe1ttfA "~History - Weird History" scihi
 https://www.nature.com/nataging.rss "~Sci - Nature Aging" scihi
 
-# Comedy
-https://www.youtube.com/feeds/videos.xml?channel_id=UCRSWQSkgVqNtPMK4WEToOiA "~Comedy - Komissarenko" comedy
