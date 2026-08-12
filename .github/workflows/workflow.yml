@@ -69,6 +69,11 @@ jobs:
       - name: Run liveboat
         run: ./bin/liveboat --template-path templates/default --config-file config/liveboat-config.toml
 
+      - name: Redact secret-shaped strings from feed content
+        run: |
+          grep -rlE 'hf_[A-Za-z0-9]{20,}' ./docs 2>/dev/null | xargs -r sed -i -E 's/hf_[A-Za-z0-9]{20,}/[REDACTED]/g'
+        shell: bash
+
       - name: Truncate database
         run: |
           ./scripts/truncate_db ${{ env.NEWSBOAT_CACHE_RETENTION_DAYS }}
