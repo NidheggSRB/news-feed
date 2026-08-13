@@ -71,7 +71,7 @@ jobs:
 
       - name: Redact secret-shaped strings from feed content
         run: |
-          grep -rlE 'hf_[A-Za-z0-9]{20,}' ./docs 2>/dev/null | xargs -r sed -i -E 's/hf_[A-Za-z0-9]{20,}/[REDACTED]/g'
+          grep -rlE 'hf_[A-Za-z0-9]{20,}' ./docs 2>/dev/null | xargs -r sed -i -E 's/hf_[A-Za-z0-9]{20,}/[REDACTED]/g' || true
         shell: bash
 
       - name: Truncate database
